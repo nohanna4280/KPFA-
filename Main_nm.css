@@ -1,0 +1,380 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 기본 */
+.container {
+    width: 375px;
+    margin: 0 auto;
+    background: #fff;
+    font-family: 'Pretendard', sans-serif;
+}
+
+/* 헤더 */
+.header {
+    height: 56px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+
+.logo {
+    width: 96px;
+    height: 25px;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    background: #222;
+}
+
+/* 메인 */
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+/* 카드 */
+.card-section {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* 추가 */
+}
+
+.swiper {
+    width: 100%;
+    overflow: visible; /* 추가 - swiper 기본값 덮어씌우기 */
+}
+
+.card-list {
+    display: flex;
+}
+
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 0 20px;
+}
+
+.slide_img{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.category {
+    font-size: 12px;
+    color: #868A93;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1F1F1F;
+}
+
+/* swiper 추가 */
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+}
+
+.swiper-pagination {
+    bottom: 10px !important;
+}
+
+/* 슬라이드 하단 컨트롤 */
+.slide-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+/* 페이지 표시 */
+.page {
+    font-size: 14px;
+    color: #1F1F1F;
+}
+
+/* 버튼 영역 */
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.slide-controls {
+    padding: 0 20px; /* 추가 */
+}
+
+/* 버튼 스타일 */
+.buttons button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(31,31,31,0.1);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* 메뉴 */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 14px;
+    row-gap: 16px;
+}
+
+.menu-item {
+    width: 83.8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-size: 14;
+    text-decoration: none;
+    color: #000;
+}
+
+/* 활동 */
+.activity h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.activity-card {
+    width: 100%;
+    height: 98px;
+    background: #000;
+    background-size: cover;
+    color: #fff;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    cursor: pointer;
+}
+
+.activity-card.expanded {
+    height: 300px;
+}
+
+.activity-card-label {
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+}
+
+.activity-btn {
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: none; /* 기본 숨김 */
+}
+
+.activity-btn img {
+    width: 12px;
+    height: 12px;
+}
+
+.activity-card.expanded .activity-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity-card.big {
+    height: 300px;
+}
+
+.activity-card.big img {
+    width: 375px;
+    height: 300px;
+}
+
+.activity-card.small {
+  height: 98px;
+  margin-top: 8px;
+}
+
+/* 기본 상태: 내용 숨김 */
+.activity-content {
+    display: none;
+    padding: 0 16px 16px;
+    font-size: 14px;
+}
+
+/* 열렸을 때 */
+.activity-card.expanded .activity-content {
+    display: block;
+}
+
+/* 카드 확장 */
+.activity-card {
+    height: 98px;
+    transition: all 0.3s ease;
+}
+
+
+.activity-stack{
+    position: relative;
+    margin-top: 16px;
+}
+
+/* 혜택 */
+.benefit {
+  padding: 0 20px;
+}
+
+.circle-btn {
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #222;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.benefit-item {
+    background: #F4F4F4;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+
+.benefit-title {
+    font-size: 18px;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.benefit-desc {
+    font-size: 16px;
+    color: #666;
+}
+
+.accession{
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+}
+
+/* 공지 */
+.notice {
+    padding: 0 20px;
+}
+
+.notice-item {
+    width: 335px;
+    padding: 16px 0;
+    border-top: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA;
+}
+
+.notice-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #868A93;
+}
+
+.boon {
+    margin-left: 195px;
+}
+
+.boon p{
+    color: #000;
+}
+
+/* 공지 슬라이드 */
+.notice .swiper {
+    width: 375px;
+    overflow: hidden;
+}
+
+
+.notice-bottom-fixed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+/* 오른쪽 컨트롤 */
+.notice-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 버튼 */
+.notice-controls button {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* 페이지 숫자 */
+.notice-controls .page {
+    font-size: 12px;
+}
+
+/* 푸터 */
+.footer {
+  padding: 16px 0 40px;
+  border-top: 1px solid rgba(0,0,0,0.04);
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.divider {
+  width: 1px;
+  height: 12px;
+  background: #D5D5D5;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #868A93;
+}
